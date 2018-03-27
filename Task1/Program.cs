@@ -8,7 +8,7 @@ namespace Task1
         {
             string result = "";
 
-            while(true)
+            while (true)
             {
                 Console.WriteLine("Enter string or 0 if you want to see result");
                 string input = Console.ReadLine();
@@ -18,7 +18,7 @@ namespace Task1
                     if (input == "") throw new EmptyStringException("Your string is empty!");
                     result += input[0];
                 }
-                catch(EmptyStringException exp)
+                catch (EmptyStringException exp)
                 {
                     Console.WriteLine(exp.Message);
                 }
